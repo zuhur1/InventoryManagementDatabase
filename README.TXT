@@ -1,26 +1,109 @@
-Inventory Management Database Project
-Overview:
-This inventory management database project is designed to simulate a real-world inventory system 
-that provides deep insights into various operational metrics. The database tracks key entities such
-as products, suppliers, customers, orders, sales, shipments, returns, and payments. 
-By using SQL queries, this project demonstrates how to derive actionable Key Performance Indicators(KPIs)
-that support business decisions and improve operations
+# Inventory Management Database
 
-Feature and insights.
-Key Performance Indicators (KPIs):
-1. sales performance: 
-- total sales by customer: Identify top customers by analyzing their total purchases
-- Quantity Sold by product: Track the sales volume of specific products to understand demand trends
-- Sales linked to Warranties: Determine the proportion of products sold with Warranties
-2. Inventory Health:
-- Low stock alerts: Creates a view to monitor products with low stock levels.
-- Stock trigger: trigger automatically updates quantity in stock after each sales
-3. Customer Insights:
-- Payment Preferences: Analyze the distribution of payment methods used by customers 
-4. Supplier and Shipment Management:
-- On-Time Shipments: Evaluate shipments occuring within a specific timeframe
-- Shipments without tracking numbers: Identify shipments missing critical tracking information
+## Overview
 
-Database Structure
-Consists of 10 interconnected tables (see ERD)
+This Inventory Management Database is a relational SQL database designed to simulate a real-world inventory management system. It tracks inventory operations from supplier orders to customer sales while providing meaningful business insights through analytical SQL queries.
+
+The database includes entities for products, suppliers, customers, orders, shipments, sales, warranties, returns, invoices, payment methods, and discounts. It demonstrates database design, normalization, foreign key relationships, SQL queries, views, and triggers.
+
+---
+
+## Database Structure
+
+The database consists of **10 interconnected tables**:
+
+- Products
+- Suppliers
+- Customers
+- Orders
+- Shipments
+- Sales
+- Warranties
+- Payment_Methods
+- Returns
+- Invoices
+- Discounts
+
+See the included **Entity Relationship Diagram (ERD)** for the complete database structure.
+
+---
+
+## Repository Contents
+
+| File | Description |
+|------|-------------|
+| **ERDIMB** | Entity Relationship Diagram (ERD) illustrating table relationships. |
+| **TablesIMD.sql** | Creates the database schema, including tables, primary keys, foreign keys, and relationships. |
+| **TableDataIMD.sql** | Populates the database with sample data. |
+| **Queries_Triggers.sql** | Contains analytical SQL queries, a view, and a trigger. |
+
+---
+
+## Features
+
+- Relational database design
+- Primary and foreign key constraints
+- Normalized table structure
+- Business-focused SQL queries
+- SQL View for inventory monitoring
+- SQL Trigger for automatic stock updates
+- Inventory and sales analytics
+
+---
+
+## Key Business Insights (KPIs)
+
+### Sales Performance
+- Total sales by customer
+- Quantity sold by product
+- Products sold with warranties
+- Sales linked to invoices and discounts
+
+### Inventory Health
+- Low-stock product monitoring
+- Automatic inventory updates after each sale using a trigger
+
+### Customer Insights
+- Payment method preferences
+- Customer purchase history
+- Customers purchasing multiple items
+
+### Supplier & Shipment Management
+- Order fulfillment time
+- Shipments within a specified date range
+- Shipments without tracking numbers
+- Supplier shipment tracking
+
+### Returns & Warranty Analysis
+- Product return counts
+- Return reasons
+- Warranty information associated with sales
+
+---
+
+## Technologies Used
+
+- MySQL
+- SQL
+- Relational Database Design
+- Views
+- Triggers
+- Joins
+- Aggregate Functions
+- Foreign Key Constraints
+
+---
+
+## Learning Objectives
+
+This project demonstrates:
+
+- Database schema design
+- Entity relationship modeling
+- SQL data manipulation
+- Complex JOIN operations
+- Aggregate reporting
+- Business intelligence queries
+- Data integrity using constraints
+- Database automation with triggers
 
