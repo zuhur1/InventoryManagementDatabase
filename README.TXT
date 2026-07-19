@@ -30,12 +30,11 @@ See the included **Entity Relationship Diagram (ERD)** for the complete database
 
 ## Repository Contents
 
-| File | Description |
-|------|-------------|
-| **ERDIMB** | Entity Relationship Diagram (ERD) illustrating table relationships. |
-| **TablesIMD.sql** | Creates the database schema, including tables, primary keys, foreign keys, and relationships. |
-| **TableDataIMD.sql** | Populates the database with sample data. |
-| **Queries_Triggers.sql** | Contains analytical SQL queries, a view, and a trigger. |
+
+ERDIMB: Entity Relationship Diagram (ERD) illustrating table relationships
+TablesIMD.sql: Creates the database schema, including tables, primary keys, foreign keys, and relationships. 
+TableDataIMD.sql: Populates the database with sample data. 
+Queries_Triggers.sql: Contains analytical SQL queries, a view, and a trigger. 
 
 ---
 
